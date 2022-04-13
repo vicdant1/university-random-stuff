@@ -1,17 +1,13 @@
 >Cpp Studies
 
-- Ask Julio about github classroom profile
-- Should I create my own repository and store things on my account?
+- Vector structure and useful methods about it
+- Templates in C++ (generics in c#)
+- Pair structure and useful methods about it
+- Sort, unique, erase
+- Modularization (.hpp/.cpp/.h)
+- Functions overload
+- OOP in C++
+- Formatted output
+- Type casting
+- Const reference in C++
 
-
-
--------
-
-
-
-review:
-
-- vector structure and useful methods
-- templates in c++
-- pair structure and useful methods
-- sort, unique, erase
