@@ -1,4 +1,5 @@
 #include "Conjunto.hpp"
+#include <iostream>
 
 
 
@@ -42,7 +43,7 @@ std::vector<double> Conjunto::uniaoConjunto(Conjunto* conjunto)
   return uniao;
 }
 
-void Conjunto::intersecaoConjunto(Conjunto* conjunto)
+std::vector<double> Conjunto::intersecaoConjunto(Conjunto* conjunto)
 {
   std::vector<double> intersecao;
 
@@ -60,10 +61,12 @@ void Conjunto::intersecaoConjunto(Conjunto* conjunto)
 
 void Conjunto::imprimeConjunto()
 {
-  std::cout << "["
+  std::cout << "[";
+
   for(auto elementoConjunto : elementos)
   {
     std::cout << elementoConjunto << std::endl;
   }
+  
   std::cout << "]" << std::endl;
 }
