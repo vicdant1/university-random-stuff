@@ -18,6 +18,6 @@ class Conjunto
     std::vector<double> intersecaoConjunto(Conjunto* conjunto);
     void imprimeConjunto();
 
-}
+};
 
 #endif
