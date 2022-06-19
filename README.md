@@ -1,13 +1,11 @@
->Cpp Studies
 
-- Vector structure and useful methods about it
-- Templates in C++ (generics in c#)
-- Pair structure and useful methods about it
-- Sort, unique, erase
-- Modularization (.hpp/.cpp/.h)
-- Functions overload
-- OOP in C++
-- Formatted output
-- Type casting
-- Const reference in C++
+# University Random Stuff
+This is a repository to store some useful (or not) stuff from University.
+Btw, I study IT at UFRN, wich in english would mean Federal University of Rio Grande do Norte.
+## Content
+
+Here you will find topics like C++ code, MIPS Assembly code, eletrical circuit schemas, etc.
+## Authorship
+
+- [@vicdant1](https://www.github.com/vicdant1)
 
