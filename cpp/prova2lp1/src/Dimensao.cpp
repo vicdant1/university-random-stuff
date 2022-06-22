@@ -1,5 +1,7 @@
 #include "Dimensao.hpp"
 #include "Vetor.hpp"
+#include "algorithm"
+#include <iostream>
 #include <fstream>
 
 Dimensao::Dimensao(int dimensao)
@@ -14,7 +16,7 @@ void Dimensao::CriarVetor(int n, int x, int y, int z)
   this->vetores.push_back(vetorCriado);
 }
 
-void Dimensao::LerArquivo(std::string filePath)
+std::vector<Vetor*> Dimensao::LerRetornarArquivo(std::string filePath)
 {
   std::fstream file;
   file.open(filePath);
@@ -45,9 +47,5 @@ void Dimensao::LerArquivo(std::string filePath)
     rowCounter++;
   }
 
-}
-
-std::vector<Vetor*> Dimensao::GetVetores()
-{
   return this->vetores;
 }
