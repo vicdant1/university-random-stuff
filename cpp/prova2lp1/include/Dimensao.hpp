@@ -3,6 +3,7 @@
 
 #include "Vetor.hpp"
 #include "vector"
+#include "string"
 
 class Dimensao
 {
@@ -13,6 +14,8 @@ private:
 public:
   Dimensao(int dimensao);
   void CriarVetor(int n, int x, int y, int z);
+  void LerArquivo(std::string filePath);
+  std::vector<Vetor*> GetVetores();
 };
 
 #endif

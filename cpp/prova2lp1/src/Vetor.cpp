@@ -31,21 +31,23 @@ int Vetor::GetZ()
   return this->z;
 }
 
-void Vetor::CompararVetores(Vetor vetorA, Vetor vetorB)
+bool Vetor::CompararVetores(Vetor vetorA, Vetor vetorB)
 {
   if(vetorA.GetN() != vetorB.GetN())
   {
-    if(vetorA.GetN() < vetorB.GetN()) cout << "Vetor A é menor" << endl;
-    else cout << "Vetor B é menor" << endl;
+    if(vetorA.GetN() < vetorB.GetN()) return true;
+    else return false;
   }
   else if(vetorA.GetN() == vetorB.GetN())
   {
-    if(vetorA.GetX() <= vetorB.GetX() && vetorA.GetY() <= vetorB.GetY() && vetorA.GetZ() <= vetorB.GetZ())
-      cout << "Vetor A é menor" << endl;
+    if(vetorA.GetX() <= vetorB.GetX() && 
+       vetorA.GetY() <= vetorB.GetY() && 
+       vetorA.GetZ() <= vetorB.GetZ())
+       return true;
     else
-      cout << "Vetor B é menor" << endl;
+      return false;
   }
-  else
-    cout << "Vetores iguais" << endl;
 
+  // vetores iguais
+  return true;
 }

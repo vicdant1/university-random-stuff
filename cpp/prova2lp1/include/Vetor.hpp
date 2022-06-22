@@ -10,7 +10,7 @@ private:
   int z;
 public:
   Vetor(int n, int x, int y, int z);
-  void CompararVetores(Vetor vetorA, Vetor vetorB);
+  bool CompararVetores(Vetor vetorA, Vetor vetorB);
 
   int GetN();
   int GetX();
