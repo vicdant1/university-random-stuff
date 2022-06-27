@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <h4 class="text-center">Discentes encontrados</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Matrícula</th>
+                <th>Aluno</th>
+                <th>Status</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>9999999999</th>
+                <td>Mark Zuckerberg</td>
+                <td>Ativo</td>
+                <td class="d-flex align-items-center justify-content-center">
+                  <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none !important;">Selecionar</a>
+                </td>
+              </tr>
+              <tr>
+                <th>9999999999</th>
+                <td>Steve Jobs</td>
+                <td>Inativo</td>
+                <td class="d-flex align-items-center justify-content-center">
+                  <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none !important;">Selecionar</a>
+                </td>
+              </tr>
+              <tr>
+                <th>9999999999</th>
+                <td>Linus Torvalds</td>
+                <td>Ativo</td>
+                <td class="d-flex align-items-center justify-content-center">
+                  <a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none !important;">Selecionar</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Dados do usuário</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <div class="row mb-3">
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput2" class="form-label">Discente</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="9999999999" value="#999999999 - Steve Jobs" disabled>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput4" class="form-label">Curso</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput4" value="Ciência da Computação" disabled>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput5" class="form-label">Usuário</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput5" value="steve.jobs1232" disabled>
+                      </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary" onclick="window.alert('Nova senha gerada para Steve Jobs: 1as5df6ym88556a6')">Recuperar Senha</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
