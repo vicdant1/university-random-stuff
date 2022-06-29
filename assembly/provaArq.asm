@@ -45,14 +45,6 @@ fim:
     move $a0, $s1
     syscall
     
-    li $v0, 4
-    la $a0, str3
-    syscall
-    
-    li $v0, 1
-    move $a0, $s2
-    syscall
-    
     li $v0,10
     syscall
     
