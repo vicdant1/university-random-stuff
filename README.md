@@ -5,6 +5,6 @@ Btw, I study IT at UFRN, wich in english would mean Federal University of Rio Gr
 ## Content
 
 Here you will find topics like C++ code, MIPS Assembly code, eletrical circuit schemas, C#, Java, etc.
-## Authorship
+## Authorship/Ownership
 
 - [@vicdant1](https://www.github.com/vicdant1)
