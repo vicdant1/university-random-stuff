@@ -26,8 +26,10 @@ void* accessMatrix(void* tid)
 {
     int index = (int)(size_t) tid;
 
+    pthread_mutex_lock(&mutex);
     for(int j = 0; j < 5; j++)
         matrix[index].push_back(rand()%100);
+    pthread_mutex_unlock(&mutex);
 }
 
 int main(int argc, char* argv[])
@@ -54,6 +56,3 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-
-
-// RECUPERANDO COMMIT 1
