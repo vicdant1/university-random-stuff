@@ -34,6 +34,9 @@ void* accessMatrix(void* tid)
 
 int main(int argc, char* argv[])
 {
+    // It is possible to use conditions in pthread (pthread_cond)
+    // Try to create examples with producer/consumer concepts - lesson
+    
     int threadsNumber = atoi(argv[1]);
     pthread_t threads[threadsNumber];
 
