@@ -1,0 +1,28 @@
+Estado,UF,Região,Capital,N° de habitantes
+Rondônia,RO,Região Norte,Porto Velho,1749000
+Acre,AC,Região Norte,Rio Branco,790101
+Amazonas,AM,Região Norte,Manaus,3874000
+Roraima,RR,Região Norte,Boa Vista,496936
+Pará,PA,Região Norte,Belém,6704000
+Amapá,AP,Região Norte,Macapá,751000
+Tocantins,TO,Região Norte,Palmas,1497000
+Maranhão,MA,Região Nordeste,São Luis,6851000
+Piauí,PI,Região Nordeste,Teresina,3195000
+Ceará,CE,Região Nordeste,Fortaleza,8843000
+Rio Grande do Norte,RN,Região Nordeste,Natal,3409000
+Paraíba,PB,Região Nordeste,João Pessoa,3944000
+Pernambuco,PE,Região Nordeste,Recife,9278000
+Alagoas,AL,Região Nordeste,Maceió,3322000
+Sergipe,SE,Região Nordeste,Aracaju,2220000
+Bahia,BA,Região Nordeste,Salvador,15130000
+Minas Gerais,MG,Região Sudeste,Belo Horizonte,20870000
+Espírito Santo,ES,Região Sudeste,Vitória,3885000
+Rio de Janeiro,RJ,Região Sudeste,Rio de Janeiro,16460000
+São Paulo,SP,Região Sudeste,São Paulo,44040000
+Paraná,PR,Região Sul,Curitiba,11080000
+Santa Catarina,SC,Região Sul,Florianópolis,7165000
+Rio Grande do Sul,RS,Região Sul,Porto Alegre,11290000
+Mato Grosso do Sul,MS,Região Centro-Oeste,Campo Grande,2620000
+Mato Grosso,MT,Região Centro-Oeste,Cuiabá,3224000
+Goiás,GO,Região Centro-Oeste,Goiânia,6523000
+Distrito Federal,DF,Região Centro-Oeste,Brasília,2923369
