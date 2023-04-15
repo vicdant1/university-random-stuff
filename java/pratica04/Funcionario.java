@@ -23,5 +23,8 @@ public class Funcionario {
     this.nome = nome;
   }
 
+  public String getInformation(){
+    return "Matrícula.: " + matricula + " Nome.: " + nome + " Tipo.: " + getClass();
+  }
   
 }
