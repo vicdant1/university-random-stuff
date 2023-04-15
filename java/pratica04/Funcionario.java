@@ -24,7 +24,7 @@ public class Funcionario {
   }
 
   public String getInformation(){
-    return "Matrícula.: " + matricula + " Nome.: " + nome + " Tipo.: " + getClass();
+    return "Matricula.: " + matricula + " Nome.: " + nome + " Tipo.: " + getClass();
   }
   
 }

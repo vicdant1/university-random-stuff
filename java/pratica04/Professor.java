@@ -43,6 +43,18 @@ public class Professor extends Funcionario{
   
   @Override
   public String getInformation(){
-    return "Matrícula.: " + matricula + " Nome.: " + nome + " Tipo.: " + getClass() + " [" + tipo + "]";
+    return "Matricula.: " + matricula + " Nome.: " + nome + " Tipo.: " + getClass() + " [" + tipo + "]";
+  }
+
+  public String getLessonInformation(){
+    String ret = "";
+
+    ret += "Professor [" + nome + "]\n";
+    
+    for(Aluno aluno : this.alunos){
+      ret += "Aluno >>> " + aluno.getNome() + " " + aluno.getTreinosFormatted() + "\n";
+    }
+
+    return ret;
   }
 }

@@ -1,4 +1,8 @@
 import java.util.Set;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.HashSet;
 
@@ -60,5 +64,38 @@ public class Aluno {
 
   public void removeTreino(Treino treino){
     this.treinos.remove(treino);
+  }
+
+  public String getTreinosFormatted(){
+    String ret = "{";
+
+    SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+    for(Treino treino : treinos){
+      ret += sdf.format(treino.getData()) + "=" + treino.getAtividade() + ", ";
+    }
+
+    ret += "}";
+
+    ret = ret.replace(", }", "}");
+
+    return ret;
+  }
+
+  public String getInformation(){
+    String ret = "";
+
+    ret = "CPF.: " + cpf + " Nome: " + nome + "Idade: " + getAge() + "\n";
+
+    return ret;
+  }
+
+  public int getAge(){
+    Date today = new Date();
+    LocalDate localDataNascimento = dataNascimento.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+    LocalDate localHoje = today.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+    int idade = Period.between(localDataNascimento, localHoje).getYears() + 1900;
+
+    return idade;
   }
 }

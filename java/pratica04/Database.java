@@ -16,6 +16,38 @@ public class Database {
     return funcionarios;
   }
 
+  public Set<Funcionario> getProfessores() {
+    Set<Funcionario> professores = new HashSet<Funcionario>();
+
+    for(Funcionario funcionario : this.funcionarios){
+      if(funcionario instanceof Professor)
+        professores.add(funcionario);
+    }
+
+    return professores;
+  }
+
+  public Set<Funcionario> getRecepcionistas() {
+    Set<Funcionario> recepcionistas = new HashSet<Funcionario>();
+
+    for(Funcionario funcionario : this.funcionarios){
+      if(funcionario instanceof Recepcionista)
+        recepcionistas.add(funcionario);
+    }
+
+    return recepcionistas;
+  }
+
+  public Set<Aluno> getAlunos() {
+    Set<Aluno> alunos = new HashSet<Aluno>();
+    for(Funcionario funcionario : this.funcionarios){
+      if(funcionario instanceof Professor)
+        alunos.addAll(((Professor)funcionario).getAlunos());
+    }
+
+    return alunos;
+  }
+
   public void setFuncionarios(Set<Funcionario> funcionarios) {
     this.funcionarios = funcionarios;
   }
@@ -32,5 +64,7 @@ public class Database {
   public void removeFuncionario(Funcionario funcionario){
     this.funcionarios.remove(funcionario);
   }
+
+
   
 }

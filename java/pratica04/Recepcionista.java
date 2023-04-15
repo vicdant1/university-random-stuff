@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -30,6 +31,24 @@ public class Recepcionista extends Funcionario {
   public void removeHorarioTrabalho(Date horarioTrabalho){
     this.horariosTrabalho.remove(horarioTrabalho);
   }
+
+  public String getScheduleInformation(){
+    return "Nome.: " + nome + " " + getFormattedSchedule();
+  }
   
+  public String getFormattedSchedule(){
+    String ret = "{";
+
+    SimpleDateFormat sdf = new SimpleDateFormat("EEEE=HH:mm, ");
+    for(Date horarioTrabalho : this.horariosTrabalho){
+      ret += sdf.format(horarioTrabalho);
+    }
+
+    ret += "}";
+
+    ret = ret.replace(", }", "}");
+
+    return ret;
+  }
 
 }
