@@ -1,0 +1,20 @@
+.container {
+  animation-name: slidein;
+  animation-duration: 300s !important;
+  width: 100px;
+  height: 100px;
+}
+
+img{
+  width: 100%;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}

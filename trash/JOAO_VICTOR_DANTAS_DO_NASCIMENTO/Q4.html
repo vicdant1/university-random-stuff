@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Divs</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<style>
+			.red {
+				color: red
+			}
+
+			.d-block{
+				display: block !important;
+			}
+
+			.d-none{
+				display: none !important;
+			}
+
+			.background-green {
+				background-color: #5cb85c !important;
+			}
+
+			.background-blue {
+				background-color: #428bca !important;
+			}
+
+
+		</style>
+
+		<script type="text/javascript">
+			//incluir a codificação javascript aqui
+			const writeTest = () => {
+				$(".inputs").val("teste").addClass("red")
+			}
+			
+			const showInputs = () => {
+				$(".inputs").removeClass("d-none")
+				$(".inputs").addClass("d-block")
+			}
+
+			const hideInputs = () => {
+				$(".inputs").removeClass("d-block")
+				$(".inputs").addClass("d-none")
+			}
+
+			const changeColors = () => {
+				$("#div1").toggleClass("background-green")
+				$("#div2").toggleClass("background-blue")
+			} 
+
+			const ereaseTest = () => {
+				$("#div1").text("")
+				$("#div2").text("")
+			}
+
+			const writeTestDiv = () => {
+				$("#div1").text("teste")
+				$("#div2").text("teste")
+			}
+
+			const addParagrafo = () => {
+				$(".text-container").append("<p class='bg-primary'>paragrafo extra</p>")
+			}
+
+			const changeTextColors = () => {
+				$("p").toggleClass("background-green")
+			}
+
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="container">
+			<div class="jumbotron">
+				<h1>SELECIONANDO ELEMENTOS COM JQUERY</h1>
+			</div>
+
+			<hr />
+
+			<div class="row">
+				<div class="col-md-4">
+					<h4>Parágrafos (p)</h4>
+				</div>
+				<div class="col-md-4">
+					<h4>Divisões (div)</h4>
+				</div>
+				<div class="col-md-4">
+					<h4>Campos (input)</h4>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 text-container">
+					<p class="bg-primary">Este é um parágrafo</p>
+					<p class="bg-success">Este é outro parágrafo</p>
+				</div>
+
+				<div class="col-md-4">
+					<div  id="div1" style="height: 100px; width: 100px; background:#428bca;" class="pull-left">
+					</div>
+					<div id="div2" style="height: 100px; width: 100px; background:#5cb85c; margin-left:15px" class="pull-left"></div>
+				</div>
+
+				<div class="col-md-4">
+					<input type="text" class="form-control inputs" />
+					<input type="text" class="form-control inputs" />
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="row">
+				<div class="col-md-4">
+					<button type="button" class="btn btn-danger" onclick="addParagrafo()">Adicionar parágrafo</button>
+					<button type="button" class="btn btn-success" onclick="changeTextColors()">Mudar cor dos parágrafos</button>
+				</div>
+
+				<div class="col-md-4">
+					<button type="button" class="btn btn-danger" onclick="writeTestDiv()">Escrever "teste" dentro das divs</button>
+					<button type="button" class="btn btn-success" onclick="ereaseTest()">Apagar "teste" das divs</button>
+					<button type="button" class="btn btn-warning" onclick="changeColors()">Trocar as cores das divs</button>
+				</div>
+
+				<div class="col-md-4">
+					<button type="button" class="btn btn-danger" onclick="hideInputs()">Esconder inputs</button>
+					<button type="button" class="btn btn-success" onclick="showInputs()">Exibir inputs</button>
+					<button type="button" class="btn btn-warning" onclick="writeTest()">Escrever "teste" de cor vermelha nos inputs</button>
+				</div>
+
+			</div>
+			
+		</div>
+	</body>
+</html>

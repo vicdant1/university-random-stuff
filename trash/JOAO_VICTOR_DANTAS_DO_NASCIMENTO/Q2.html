@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Calculadora Complexa</title>
+
+<style type="text/css">
+<!--
+/* Conteúdo do CSS */
+/* Estilo "emprestado" do site http://pt.wikipedia.org/wiki/XHTML */
+
+#visor {
+   background-color: #bdffb4;
+   text-align: right;
+}
+
+table {
+   margin: 0 auto 0 auto;
+}
+
+form fieldset {
+   margin: 10px auto 10px auto;
+   width: 40%;
+   border: solid black 1px;
+   padding: 3%;
+   margin-bottom: 10px;
+}
+
+form input {
+   width: 100%;
+   border: solid #ccc 1px;
+   font-size: 11px;
+   margin-bottom: 10px;
+}
+
+form input.num {
+   display: block;
+   width: 24px;
+   height: 24px;
+}
+
+form input.oper {
+   display: block;
+   width: 24px;
+   height: 24px;
+   background-color: #b2b2b2;
+}
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+/* Conteúdo do JavaScript */
+let localOperator = ""
+
+// Função que adiciona os números no Visor quando pressionado os botões
+function calcNum(num) {
+   if(localOperator == "="){
+      document.calcform.visor.value = '';
+      localOperator = ""
+   }
+   if (typeof gvisor == 'undefined') {
+      document.calcform.visor.value = '';
+   }
+   document.calcform.visor.value = document.calcform.visor.value + num;
+   gvisor = 1;
+}
+
+// Função que limpa a calculadora e todas as variáveis existentes.
+function calcLimpar() {
+   document.calcform.visor.value = '';
+   delete gvalor;
+   delete goper;
+   delete gvisor;
+}
+
+function calcParse(operation) {
+   switch(operation){
+      case "somar":
+         localOperator = "+"
+         document.calcform.visor.value = document.calcform.visor.value + localOperator;
+      break;
+
+      case "subtrair":
+         localOperator = "-"
+         document.calcform.visor.value = document.calcform.visor.value + localOperator;
+      break;
+
+      case "multiplicar":
+         localOperator = "*"
+         document.calcform.visor.value = document.calcform.visor.value + localOperator;
+      break;
+
+      case "dividir":
+         localOperator = "/"
+         document.calcform.visor.value = document.calcform.visor.value + localOperator;
+      break;
+
+      case "resultado":
+         let displayNumbers = document.calcform.visor.value.split(localOperator)
+         let firstNumber = displayNumbers[0];
+         let secondNumber = displayNumbers[1];
+
+         let result = eval(`${firstNumber} ${localOperator} ${secondNumber}`)
+
+         document.calcform.visor.value = result;
+         localOperator = "="
+      break;
+
+   }
+}
+
+
+</script>
+
+</head>
+<body>
+
+<form name="calcform" method="post" action="">
+   <fieldset>
+      <legend>Calculadora Complexa</legend>
+
+      <input type="text" name="visor" id="visor" />
+
+      <table id="calc">
+         <tr>
+	    <td><input type="button" name="num9" class="num" value="9" onclick="calcNum(9)" /></td>
+	    <td><input type="button" name="num8" class="num" value="8" onclick="calcNum(8)" /></td>
+	    <td><input type="button" name="num7" class="num" value="7" onclick="calcNum(7)" /></td>
+	    <td><input type="button" name="somar" class="oper" value="+" onclick="calcParse('somar')" /></td>
+	 </tr>
+         <tr>
+	    <td><input type="button" name="num6" class="num" value="6" onclick="calcNum(6)" /></td>
+	    <td><input type="button" name="num5" class="num" value="5" onclick="calcNum(5)" /></td>
+	    <td><input type="button" name="num4" class="num" value="4" onclick="calcNum(4)" /></td>
+	    <td><input type="button" name="subtrair" class="oper" value="-" onclick="calcParse('subtrair')" /></td>
+	 </tr>
+         <tr>
+	    <td><input type="button" name="num3" class="num" value="3" onclick="calcNum(3)" /></td>
+	    <td><input type="button" name="num2" class="num" value="2" onclick="calcNum(2)" /></td>
+	    <td><input type="button" name="num1" class="num" value="1" onclick="calcNum(1)" /></td>
+	    <td><input type="button" name="multiplicar" class="oper" value="*" onclick="calcParse('multiplicar')" /></td>
+	 </tr>
+	 <tr>
+	    <td><input type="button" name="num0" class="num" value="0" onclick="calcNum(0)" /></td>
+	    <td><input type="button" name="igual" class="num" value="=" onclick="calcParse('resultado')" /></td>
+	    <td><input type="button" name="limpar" class="num" value="AC" onclick="calcLimpar()" /></td>
+	    <td><input type="button" name="dividir" class="oper" value="/" onclick="calcParse('dividir')" /></td>
+	 </tr>
+      </table>
+   </fieldset>
+</form>
+
+</body>
+</html>
