@@ -16,3 +16,6 @@ once jframe is created, it has a single child (container instance of jrootpane)
 
 * jrootpane can create components like contentpane and menubar
 
+contentpane = area independente da plataforma que cobrea area util do jframe
+	é onde definimos layout
+	objetos, cores e fontes sao configurados aqui
