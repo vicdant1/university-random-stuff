@@ -1,0 +1,18 @@
+AWT - ABSTRACKT WINDOW TOOLKIT (antigo)
+
+JFC - JAVA FOUNDATION CLASSES << + novo
+	java.awt && javax.swing
+
+Swing - coleção de componentes
+
+Component - representacao grafica (botoes, textfields...)
+
+container => special component
+	  => it has a layout manager
+
+on Swing, the main interface is javax.swing.JFrame 
+
+once jframe is created, it has a single child (container instance of jrootpane)
+
+* jrootpane can create components like contentpane and menubar
+
