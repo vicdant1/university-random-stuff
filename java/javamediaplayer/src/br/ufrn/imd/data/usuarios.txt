@@ -1,0 +1,7 @@
+0,joel,123,0
+1,joao,123,0
+2,iago,teste,1
+3,comum,comum,2
+4,admin,admin,0
+5,testecheckmarcado,123,1
+6,testecheckdesmarcado,123,2

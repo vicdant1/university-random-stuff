@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="617.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.controle.PrincipalController">
+   <children>
+      <Label layoutX="199.0" layoutY="75.0" prefHeight="25.0" prefWidth="262.0" style="-fx-alignment: CENTER;" text="Musicas" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPaneMusics" layoutX="200.0" layoutY="108.0" prefHeight="384.0" prefWidth="262.0" />
+      <ScrollPane fx:id="scrollPaneDirectorys" layoutX="524.0" layoutY="108.0" prefHeight="384.0" prefWidth="262.0" />
+      <Button fx:id="addDirectoryButton" alignment="CENTER" contentDisplay="TOP" layoutX="45.0" layoutY="108.0" mnemonicParsing="false" onAction="#addDirectoryClick" prefHeight="102.0" prefWidth="104.0" style="-fx-background-color: transparent; -fx-text-fill: #000000;" text="Novo Diretório">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="addFileButton" alignment="CENTER" contentDisplay="TOP" layoutX="45.0" layoutY="225.0" mnemonicParsing="false" onAction="#addFileClick" prefHeight="102.0" prefWidth="104.0" style="-fx-background-color: transparent; -fx-text-fill: #000000;" text="Novo Arquivo">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="avatarButton" defaultButton="true" layoutX="867.0" layoutY="75.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="71.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="67.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/user-tie-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ScrollPane fx:id="scrollPanePlaylists" layoutX="827.0" layoutY="271.0" prefHeight="221.0" prefWidth="151.0" />
+      <Label fx:id="labelPlaylist" alignment="CENTER" layoutX="823.0" layoutY="237.0" prefHeight="26.0" prefWidth="151.0" text="Playlists">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="newPlaylistButton" alignment="CENTER" layoutX="829.0" layoutY="525.0" mnemonicParsing="false" onAction="#clickButtonNewPlaylist" prefHeight="57.0" prefWidth="151.0" style="-fx-background-color: transparent; -fx-text-fill: #000000;" text="Nova Playlist" textAlignment="JUSTIFY">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="48.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/plus.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ProgressBar fx:id="progressBar" layoutX="220.0" layoutY="550.0" prefHeight="20.0" prefWidth="585.0" progress="0.0" />
+      <Button fx:id="previousButton" layoutX="10.0" layoutY="536.0" mnemonicParsing="false" onAction="#clickPreviousButton" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/backward-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="playButton" layoutX="73.0" layoutY="535.0" minWidth="38.0" mnemonicParsing="false" onAction="#handlePlayPause" prefHeight="44.0" prefWidth="38.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/play-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="nextButton" layoutX="116.0" layoutY="536.0" mnemonicParsing="false" onAction="#clickNextButton" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/forward-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="resetButton" layoutX="166.0" layoutY="535.0" minWidth="35.0" mnemonicParsing="false" onAction="#clckResetButton" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/rotate-left-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="buttonCriarUser" layoutX="42.0" layoutY="40.0" mnemonicParsing="false" onAction="#clickButtonCriarUser" prefHeight="34.0" prefWidth="110.0" style="-fx-background-color: #6C63FF; -fx-background-radius: 10; -fx-border-radius: 10;" text="Criar usuario" textFill="WHITE" />
+      <Label fx:id="wrongPlay" layoutX="21.0" layoutY="502.0" prefHeight="21.0" prefWidth="224.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNameUser" layoutX="846.0" layoutY="159.0" prefHeight="21.0" prefWidth="118.0" style="-fx-text-fill: #3F3D56;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNameMusic" layoutX="218.0" layoutY="513.0" prefHeight="21.0" prefWidth="585.0" style="-fx-text-fill: #3F3D56; -fx-alignment: CENTER;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNamePlaylist" layoutX="524.0" layoutY="75.0" prefHeight="25.0" prefWidth="262.0" style="-fx-alignment: CENTER;" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

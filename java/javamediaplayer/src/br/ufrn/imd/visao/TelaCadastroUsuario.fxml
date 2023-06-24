@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="478.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.controle.CadastroController">
+   <children>
+      <Button fx:id="btnRegister" layoutX="323.0" layoutY="254.0" mnemonicParsing="false" onAction="#click_btnRegister" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #6C63FF; -fx-background-radius: 10; -fx-border-radius: 10;" text="Cadastrar" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="126.0" layoutY="75.0" text="Usuário" textFill="#3f3d56">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="118.0" text="Senha" textFill="#3f3d56">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputUsernameReg" layoutX="225.0" layoutY="77.0" prefHeight="26.0" prefWidth="187.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" />
+      <PasswordField fx:id="inputPasswordReg" layoutX="225.0" layoutY="120.0" prefHeight="26.0" prefWidth="187.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+      <Label fx:id="lblRegMessage" alignment="CENTER" layoutX="14.0" layoutY="29.0" prefHeight="17.0" prefWidth="449.0" />
+      <Label layoutX="40.0" layoutY="159.0" text="Confirmar Senha" textFill="#3f3d56">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="inputConfirmPassReg" layoutX="224.0" layoutY="161.0" prefHeight="26.0" prefWidth="187.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+      <CheckBox fx:id="cbxCheckVipUser" layoutX="326.0" layoutY="209.0" mnemonicParsing="false" text="Usuário Vip" />
+   </children>
+</Pane>
