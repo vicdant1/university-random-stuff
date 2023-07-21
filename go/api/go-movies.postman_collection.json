@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "87b09ebe-b1d0-4cbf-b496-7f5ffd44142d",
+		"name": "go-movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13704912"
+	},
+	"item": [
+		{
+			"name": "Get movie by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/go-movies/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/go-movies"
+			},
+			"response": []
+		},
+		{
+			"name": "create new movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"\",\n    \"imdbid\": \"tt1797629\",\n    \"title\": \"Endgame\",\n    \"year\": \"2011\",\n    \"released\": \"14 Mar 2011\",\n    \"genre\": \"Crime, Drama\",\n    \"director\": \"N/A\",\n    \"plot\": \"The death of his fiancee has left chess master Arkady Balagan agoraphobic and unwilling to step outside of his hotel. This debilitation, however, doesn't stop him from solving difficult crimes.\",\n    \"poster\": \"https://m.media-amazon.com/images/M/MV5BMTM0NzUwNjk5MF5BMl5BanBnXkFtZTcwOTk3NDM4NA@@._V1_SX300.jpg\",\n    \"rating_imdb\": \"\",\n    \"type\": \"series\",\n    \"rating_tomatoes\": \"\",\n    \"user_rating_tomatoes\": \"\",\n    \"response\": \"True\",\n    \"error\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/go-movies"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/go-movies/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Search in openmbd by imdbID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/go-movies/?imdbid=tt26931203",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"go-movies",
+						""
+					],
+					"query": [
+						{
+							"key": "imdbid",
+							"value": "tt26931203"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search a movie by title and/or year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/go-movies/?search=barbie&year=2023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"go-movies",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "barbie"
+						},
+						{
+							"key": "year",
+							"value": "2023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Fim de jogo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/go-movies/3"
+			},
+			"response": []
+		}
+	]
+}
