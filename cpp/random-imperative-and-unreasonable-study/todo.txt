@@ -1,0 +1,16 @@
+
+TODO List:
+
+- Install WSL/Linux environment (since windows libs are really diffent because of system's kernel)
+- Improve my VIM knownledge
+- Learn about cmake
+- Learn about compilers
+- Learn about debbugers
+- Learn about C++
+	- Remember main concepts
+	- Think about projects organization with C++
+	- How to integrate libraries with C++
+	- Graphic interface on C++
+	- Threads, Processes, Kernels, etc.
+
+Of course it will be something I'll do on my free time and since I'm a software engineer, I have no free time. Maybe when I get bored about do something so stranger that I can't even register on this repository, I'll touch it again.
