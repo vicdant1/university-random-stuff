@@ -7,6 +7,7 @@ TODO List:
 - Learn about compilers
 - Learn about debbugers
 - Learn about C++
+	- Learn about SSH keys on git repositories (ICam project)
 	- Remember main concepts
 	- Think about projects organization with C++
 	- How to integrate libraries with C++
