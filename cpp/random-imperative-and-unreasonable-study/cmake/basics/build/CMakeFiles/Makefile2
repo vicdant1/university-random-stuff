@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study
+CMAKE_SOURCE_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build
+CMAKE_BINARY_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/CMAKETEST.dir/all
+all: CMakeFiles/Test.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/CMAKETEST.dir/clean
+clean: CMakeFiles/Test.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CMAKETEST.dir
+# Target rules for target CMakeFiles/Test.dir
 
 # All Build rule for target.
-CMakeFiles/CMAKETEST.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKETEST.dir/build.make CMakeFiles/CMAKETEST.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKETEST.dir/build.make CMakeFiles/CMAKETEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build/CMakeFiles --progress-num=1,2 "Built target CMAKETEST"
-.PHONY : CMakeFiles/CMAKETEST.dir/all
+CMakeFiles/Test.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles --progress-num=1,2 "Built target Test"
+.PHONY : CMakeFiles/Test.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CMAKETEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CMAKETEST.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build/CMakeFiles 0
-.PHONY : CMakeFiles/CMAKETEST.dir/rule
+CMakeFiles/Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles 0
+.PHONY : CMakeFiles/Test.dir/rule
 
 # Convenience name for target.
-CMAKETEST: CMakeFiles/CMAKETEST.dir/rule
-.PHONY : CMAKETEST
+Test: CMakeFiles/Test.dir/rule
+.PHONY : Test
 
 # clean rule for target.
-CMakeFiles/CMAKETEST.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKETEST.dir/build.make CMakeFiles/CMAKETEST.dir/clean
-.PHONY : CMakeFiles/CMAKETEST.dir/clean
+CMakeFiles/Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/clean
+.PHONY : CMakeFiles/Test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

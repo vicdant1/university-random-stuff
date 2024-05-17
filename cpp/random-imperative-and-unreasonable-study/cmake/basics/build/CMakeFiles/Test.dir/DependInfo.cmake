@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/main.cpp" "CMakeFiles/CMAKETEST.dir/main.cpp.o" "gcc" "CMakeFiles/CMAKETEST.dir/main.cpp.o.d"
+  "/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/main.cpp" "CMakeFiles/Test.dir/main.cpp.o" "gcc" "CMakeFiles/Test.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

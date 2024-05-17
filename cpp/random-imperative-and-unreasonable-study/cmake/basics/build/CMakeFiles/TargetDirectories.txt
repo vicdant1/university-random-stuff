@@ -1,0 +1,3 @@
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles/Test.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles/edit_cache.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles/rebuild_cache.dir

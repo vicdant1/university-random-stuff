@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study
+CMAKE_SOURCE_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build
+CMAKE_BINARY_DIR = /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build/CMakeFiles /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CMAKETEST
+# Target rules for targets named Test
 
 # Build rule for target.
-CMAKETEST: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMAKETEST
-.PHONY : CMAKETEST
+Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test
+.PHONY : Test
 
 # fast build rule for target.
-CMAKETEST/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKETEST.dir/build.make CMakeFiles/CMAKETEST.dir/build
-.PHONY : CMAKETEST/fast
+Test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKETEST.dir/build.make CMakeFiles/CMAKETEST.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKETEST.dir/build.make CMakeFiles/CMAKETEST.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CMAKETEST.dir/build.make CMakeFiles/CMAKETEST.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CMAKETEST"
+	@echo "... Test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

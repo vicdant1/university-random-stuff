@@ -1,5 +1,5 @@
-CMakeFiles/CMAKETEST.dir/main.cpp.o: \
- /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/main.cpp \
+CMakeFiles/Test.dir/main.cpp.o: \
+ /mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/cmake/basics/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
