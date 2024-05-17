@@ -24,4 +24,14 @@ what this command line says is basically "CMakeLists.txt is over a directory abo
 then cmake generate a bunch of files we never touch.
 
 
+CMakeLists.txt have a bunch of different commands and the most part of them will come when we need it, but til now (the really basics) what we had was:
+
+
+cmake_minimum_required(VERSION xx.xx.xx)
+
+project(ProjectName)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+
 
