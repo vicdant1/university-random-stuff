@@ -2,12 +2,12 @@
 TODO List:
 
 - Install WSL/Linux environment (since windows libs are really diffent because of system's kernel)
-- Improve my VIM knownledge
+- Improve my VIM knownledge << already doing it
 - Learn about cmake
 - Learn about compilers
 - Learn about debbugers
 - Learn about C++
-	- Learn about SSH keys on git repositories (ICam project)
+	- Learn about SSH keys on git repositories (ICam project) << done! (already setted up config to this repo)
 	- Remember main concepts
 	- Think about projects organization with C++
 	- How to integrate libraries with C++
