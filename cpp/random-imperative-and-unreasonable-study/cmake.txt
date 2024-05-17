@@ -1,0 +1,27 @@
+
+
+learning cmake (for absolute no reason)
+
+cmake comes from Makefile
+
+make file -> make command
+
+make basically runs pretty much everything that is setted up on makefile
+
+cmake runs on top of a CMakeLists.txt file instead of a makefile
+
+create a build directory and inside this directory create build stuff
+
+
+mkdir build
+
+cd build
+
+cmake -S ../ -B .
+
+what this command line says is basically "CMakeLists.txt is over a directory above and build path is going to be the present directory"
+
+then cmake generate a bunch of files we never touch.
+
+
+
