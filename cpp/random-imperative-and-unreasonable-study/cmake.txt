@@ -35,3 +35,24 @@ add_executable(${PROJECT_NAME} main.cpp)
 
 
 
+-----
+creating default command (bin)
+
+
+install(TARGETS ${PROJECT_NAME} DESTINATION bin) << enables make install command
+
+make install command will create an executable based in all the other make configuration and send it to bin
+
+
+> sudo make install
+
+
+command abluble
+> abluble
+
+done.
+
+-----
+
+
+

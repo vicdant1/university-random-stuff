@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmearlymath.a CMakeFiles/mearlymath.dir/adder.cpp.o
+/usr/bin/ranlib libmearlymath.a
