@@ -181,7 +181,43 @@ CMakeFiles/info.dir/src/DirectoryReader.cpp.o: ../src/DirectoryReader.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h
 
 CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
@@ -368,6 +404,36 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../src/main.cpp:
 
+/usr/include/c++/11/bits/fs_ops.h:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/bits/fs_fwd.h:
+
+/usr/include/c++/11/filesystem:
+
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/istream:
@@ -410,11 +476,17 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
+/usr/include/c++/11/utility:
+
 /usr/include/errno.h:
+
+/usr/include/c++/11/bits/fs_dir.h:
 
 /usr/include/c++/11/cerrno:
 
 /usr/include/stdio.h:
+
+/usr/include/c++/11/chrono:
 
 /usr/include/c++/11/cstdio:
 
@@ -426,7 +498,11 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/c++/11/bits/shared_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/endian.h:
 
@@ -453,6 +529,8 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/c++/11/bits/fs_path.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
@@ -510,6 +588,8 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+/usr/include/c++/11/bits/unique_ptr.h:
+
 /usr/include/c++/11/ostream:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
@@ -544,11 +624,17 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/iosfwd:
 
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/ctime:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
 
 ../include/DirectoryReader.hpp:
 
@@ -582,6 +668,8 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/features-time64.h:
 
+/usr/include/c++/11/locale:
+
 /usr/include/linux/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -590,7 +678,11 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/postypes.h:
 
+/usr/include/c++/11/bits/invoke.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/c++/11/codecvt:
 
 /usr/include/c++/11/exception:
 
@@ -603,6 +695,8 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/11/tuple:
 
 /usr/include/c++/11/type_traits:
 
@@ -668,9 +762,13 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/include/libintl.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/c++/11/ext/concurrence.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
@@ -682,6 +780,8 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/time.h:
 
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/c++/11/ext/atomicity.h:
@@ -692,13 +792,21 @@ CMakeFiles/info.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
+/usr/include/c++/11/bits/allocated_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/11/iomanip:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/c++/11/bits/sstream.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 

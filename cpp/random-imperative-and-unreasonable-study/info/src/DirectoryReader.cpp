@@ -2,18 +2,17 @@
 
 #include "DirectoryReader.hpp"
 #include <iostream>
+#include <filesystem>
 
-
-using namespace std;
-namespace fs = filesystem;
+namespace fs = std::filesystem;
 
 DirectoryReader::DirectoryReader() {}
 
 void DirectoryReader::ShowDirectoryInformation() {
-	cout << "Testing directory information" << endl;
+	std::cout << "Testing directory information" << std::endl;
 	
-	for(const auto & entry : fs::directory_iterator(".")){
-		cout << entry.push() << endl;
+	for(const auto & entry : fs::directory_iterator("/")){
+		std::cout << entry.path() << std::endl;
 	}
 
 }
