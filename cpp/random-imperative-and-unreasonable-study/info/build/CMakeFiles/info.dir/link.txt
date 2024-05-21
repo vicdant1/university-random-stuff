@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/info.dir/src/main.cpp.o CMakeFiles/info.dir/src/DirectoryReader.cpp.o -o info 

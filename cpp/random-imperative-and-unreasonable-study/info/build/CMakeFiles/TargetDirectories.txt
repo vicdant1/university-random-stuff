@@ -1,0 +1,7 @@
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/info/build/CMakeFiles/info.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/info/build/CMakeFiles/edit_cache.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/info/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/info/build/CMakeFiles/list_install_components.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/info/build/CMakeFiles/install.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/info/build/CMakeFiles/install/local.dir
+/mnt/c/_projects/university-random-stuff/cpp/random-imperative-and-unreasonable-study/info/build/CMakeFiles/install/strip.dir
