@@ -9,12 +9,9 @@ namespace fs = std::filesystem;
 DirectoryReader::DirectoryReader() {}
 
 void DirectoryReader::ShowDirectoryInformation() {
-	std::cout << "Testing directory information" << std::endl;
-	
-	for(const auto & entry : fs::directory_iterator("/")){
+	for(const auto & entry : fs::directory_iterator(".")){
 		std::cout << entry.path() << std::endl;
 	}
-
 }
 
 
